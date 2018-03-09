@@ -1,4 +1,4 @@
-package api_test
+package agent_test
 
 import (
 	"testing"
@@ -7,7 +7,7 @@ import (
 	. "github.com/onsi/gomega"
 )
 
-func TestApi(t *testing.T) {
+func TestAgent(t *testing.T) {
 	RegisterFailHandler(Fail)
-	RunSpecs(t, "Api Suite")
+	RunSpecs(t, "Agent Suite")
 }
