@@ -204,6 +204,7 @@ func (a *Agent) maintainRaft(localAddr string) {
 			MaxAppendEntries:   100,
 			SnapshotInterval:   time.Second,
 			LeaderLeaseTimeout: 100 * time.Millisecond,
+			LogOutput:          ioutil.Discard,
 		},
 		nil,
 		store,

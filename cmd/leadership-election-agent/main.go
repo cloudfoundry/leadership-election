@@ -31,6 +31,7 @@ func main() {
 		cfg.NodeAddrs,
 		agent.WithLogger(log.New(os.Stderr, "", log.LstdFlags)),
 		agent.WithMetrics(&metrics{em}),
+		agent.WithPort(int(cfg.Port)),
 	)
 
 	a.Start()
