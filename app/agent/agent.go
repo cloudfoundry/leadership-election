@@ -95,7 +95,7 @@ func (a *Agent) Start() {
 	}
 	a.lis = lis
 
-	metric := a.m.NewGauge("leadership_status")
+	metric := a.m.NewGauge("LeadershipStatus")
 
 	isLeader := a.startRaft()
 
